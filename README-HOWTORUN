@@ -1,0 +1,21 @@
+# Coding Challenge - Thobie Jovian
+## Task received at 8.12 - Done at 13.12
+
+## How to Run 
+### (Repo) https://github.com/thobiejovian/image-gallery-challenge
+
+1. If you received this project via zip files then please do npm install first because i deleted the node_modules folder 
+   to reduce the size and time
+   
+### Issues with Fetching the data from the URL  
+
+1. I spent one day to figure it out why the URL rejecting my request to fetch the data with axios or without axios. The URL is working fine in browser or postman but to fetch the data via GET, the server is rejecting the request. 
+   the first issues is CORS problem, with CORS problem i can bypass it for example with plugins from chrome, but even after bypass the cors, the server still rejects the GET request (ERROR 403)
+
+![Denied after bypass CORS](./access-denied.png)
+
+![Denied after bypass CORS(1)](./denied-after-bypasscors.png)
+
+![Denied with cors](./denied-with-cors.png)
+
+2. After discuss this Problem with Till, he gives me the Data via Text and so that is the reason why the data for this project is not fetch directly from the URL **( But i comment out the syntax to fetch the Data  )**

@@ -1,0 +1,22 @@
+.section-container{
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #ffffff;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 8px 17px 20px 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 50%);
+  .image-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .image-counter{
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+

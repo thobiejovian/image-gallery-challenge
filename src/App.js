@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import axios from "axios";
+import './App.scss';
+import ImageGallery from "./ImageGallery/ImageGallery";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    // This is the code to fetch the data from the URL but the issues when we fetch this
+    // data from frontend(via axios or without axios), there is CORS Problem and Error 403(Server Rejects)
+
+    // useEffect(() => {
+    //     fetchData();
+    // }, [])
+    //
+    // // Async await
+    // const fetchData = async () => {
+    //   const result = await axios.get("https://www.mobile.de/hiring-challenge.json");
+    //   console.log(result);
+    // }
+
+    return (
+        <div>
+            <ImageGallery/>
+        </div>
+    );
+};
 
 export default App;
